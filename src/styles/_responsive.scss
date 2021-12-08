@@ -1,0 +1,104 @@
+@media (max-width: 1366px) {
+  .content {
+    grid-gap: 2rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .content {
+    .image {
+      width: 20rem;
+      height: 20rem;
+      padding: 0.4rem;
+    }
+    .text {
+      width: 20rem;
+
+      h4 {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+      }
+      h6 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+
+    .image {
+      width: 20rem;
+      height: 20rem;
+      padding: 0.4rem;
+    }
+    .text {
+      width: 20rem;
+      text-align: center;
+      h4 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section,
+  section.active-player {
+    width: 100% !important;
+  }
+
+  .library {
+    width: 100%;
+    z-index: 5;
+
+    .title .toggle {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 0 2rem;
+    .toggle {
+      width: 2rem;
+      height: 2rem;
+      line-height: 2.2rem;
+      font-size: 0.9rem;
+    }
+  }
+  .content .image {
+    width: 17rem;
+    height: 17rem;
+  }
+  .player .controls {
+    padding: 0;
+
+    .time-step,
+    .time-end {
+      font-size: 0.7rem;
+    }
+
+    .play-control {
+      gap: 0.5rem;
+      .play-btn {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2.2rem;
+        font-size: 1rem;
+      }
+      .prev-btn,
+      .next-btn {
+        width: 1.7rem;
+        height: 1.7rem;
+        line-height: 1.8rem;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
